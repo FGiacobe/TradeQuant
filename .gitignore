@@ -128,3 +128,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Files and folders
+MetaTrader_Asimov/ticks/
+MetaTrader_Asimov/ohlc/
