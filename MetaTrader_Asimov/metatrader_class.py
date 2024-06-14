@@ -22,7 +22,8 @@ class AsimoTrader():
             if (login and password and server) == None: print("Erro ao ler as credenciais"); quit()
 
         # Caso o mt5 nao inicialize, quit()
-        if not mt5.initialize(login=self.login, password=self.password, server=self.server, path="C:\\Program Files\\MetaTrader 5 Terminal\\terminal64.exe"):
+        # if not mt5.initialize(login=self.login, password=self.password, server=self.server, path="C:\\Program Files\\MetaTrader 5 Terminal\\terminal64.exe"):
+        if not mt5.initialize(login=self.login, password=self.password, server=self.server, path="/mnt/c/Program Files/MetaTrader 5/terminal64.exe"):
             print("initialize() failed, error code = ", mt5.last_error())
             mt5.shutdown(); quit()
             
